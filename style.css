@@ -1,0 +1,247 @@
+
+:root {
+  --teal: #0F6B5F;
+  --gold: #F2A93B;
+  --ink: #16302B;
+  --paper: #F4F7F5;
+  --mist: #E6EFEC;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 0.92rem;
+}
+
+.train-page,
+.inner-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--mist), #fff 70%);
+}
+
+.booking-card,
+.form-card {
+  width: 100%;
+  max-width: 980px;
+  overflow: hidden;
+  border: 1px solid rgba(22, 48, 43, 0.08);
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0 1rem 2.5rem rgba(22, 48, 43, 0.12);
+}
+
+.form-card {
+  max-width: 800px;
+  padding: clamp(1rem, 4vw, 2.5rem);
+}
+
+.booking-header,
+.form-heading {
+  padding: 1.5rem clamp(1rem, 4vw, 2.5rem);
+  color: #fff;
+  background: var(--teal);
+}
+
+.form-heading {
+  margin: calc(clamp(1rem, 4vw, 2.5rem) * -1);
+  margin-bottom: 1.5rem;
+}
+
+.booking-header h1,
+.form-heading h1 {
+  margin: 0;
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+  font-weight: 700;
+}
+
+.booking-header p,
+.form-heading p:last-child {
+  margin: 0.45rem 0 0;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.eyebrow {
+  margin: 0 0 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.booking-form {
+  padding: clamp(1rem, 4vw, 2.5rem);
+}
+
+.form-label,
+fieldset legend {
+  margin-bottom: 0.45rem;
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.form-control,
+.form-select {
+  min-height: 2.75rem;
+  border: 1px solid #dce7e3;
+  border-radius: 0.65rem;
+  background-color: #f8faf9;
+  color: var(--ink);
+  font-size: 0.85rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.15);
+}
+
+.form-check-input {
+  border-color: #b8cbc4;
+}
+
+.form-check-input:checked {
+  border-color: var(--teal);
+  background-color: var(--teal);
+}
+
+.form-check-input:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.15);
+}
+
+.form-check-label {
+  font-size: 0.82rem;
+}
+
+.input-group-text {
+  border: 0;
+  color: #fff;
+  background: var(--teal);
+  font-weight: 600;
+}
+
+.input-group .form-control {
+  border-radius: 0 0.65rem 0.65rem 0;
+}
+
+.trip-options {
+  display: inline-flex;
+  overflow: hidden;
+  border: 1px solid var(--teal);
+  border-radius: 999px;
+}
+
+.trip-options label {
+  padding: 0.65rem 1.2rem;
+  color: var(--teal);
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.trip-options input:checked + label {
+  color: #fff;
+  background: var(--teal);
+}
+
+.trip-options input:focus-visible + label {
+  outline: 3px solid var(--gold);
+  outline-offset: -3px;
+}
+
+.class-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.btn {
+  min-height: 2.75rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.btn-search {
+  border-color: var(--gold);
+  color: var(--ink);
+  background: var(--gold);
+}
+
+.btn-search:hover,
+.btn-search:focus-visible {
+  border-color: #d8921e;
+  color: var(--ink);
+  background: #f7b951;
+}
+
+.btn-clear {
+  border: 1px solid #8fa69e;
+  color: var(--ink);
+  background: #fff;
+}
+
+.btn-clear:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+  background: var(--mist);
+}
+
+.booking-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.invalid-feedback {
+  font-size: 0.78rem;
+}
+
+.form-control:user-invalid,
+.form-select:user-invalid {
+  border-color: #dc3545;
+}
+
+.form-control:user-invalid ~ .invalid-feedback,
+.form-select:user-invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.form-check-input:user-invalid {
+  border-color: #dc3545;
+}
+
+@media (max-width: 767.98px) {
+  .booking-card,
+  .form-card {
+    border-radius: 1rem;
+  }
+
+  .booking-header {
+    padding: 1.2rem;
+  }
+
+  .booking-form {
+    padding: 1rem;
+  }
+
+  .booking-actions {
+    flex-direction: column-reverse;
+  }
+
+  .booking-actions .btn {
+    width: 100%;
+  }
+
+  .trip-options label {
+    padding: 0.55rem 0.9rem;
+  }
+}

@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AITU Hack 2026 Registration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="inner-page">
+  <main class="container py-5">
+    <section class="form-card mx-auto">
+      <header class="form-heading">
+        <p class="eyebrow">Astana IT University</p>
+        <h1>AITU Hack 2026</h1>
+        <p>Register for the student hackathon</p>
+      </header>
+
+      <form action="#" method="get">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="fullName">Full name *</label>
+            <input class="form-control" id="fullName" name="fullName" type="text" minlength="2" maxlength="40" required>
+            <div class="invalid-feedback">Enter 2–40 characters.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label" for="universityEmail">University email *</label>
+            <input class="form-control" id="universityEmail" name="universityEmail" type="email" required>
+            <div class="invalid-feedback">Enter a valid email address.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label" for="age">Age *</label>
+            <input class="form-control" id="age" name="age" type="number" min="16" max="30" step="1" required>
+            <div class="invalid-feedback">Age must be a whole number from 16 to 30.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label" for="teamSize">Team size *</label>
+            <input class="form-control" id="teamSize" name="teamSize" type="number" min="1" max="4" step="1" required>
+            <div class="invalid-feedback">Enter a whole number from 1 to 4.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label" for="track">Track *</label>
+            <select class="form-select" id="track" name="track" required>
+              <option value="" selected disabled>Choose…</option>
+              <option value="Web">Web</option>
+              <option value="Mobile">Mobile</option>
+              <option value="AI">AI</option>
+              <option value="GameDev">GameDev</option>
+            </select>
+            <div class="invalid-feedback">Choose a track.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label" for="arrivalDay">Arrival day *</label>
+            <input class="form-control" id="arrivalDay" name="arrivalDay" type="date" min="2026-11-20" max="2026-11-22" required>
+            <div class="invalid-feedback">Choose 20–22 November 2026.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label" for="checkIn">Check-in time *</label>
+            <input class="form-control" id="checkIn" name="checkIn" type="time" min="09:00" max="18:00" step="1800" required>
+            <div class="invalid-feedback">Choose a time from 09:00 to 18:00 in 30-minute steps.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label" for="entryFee">Entry fee (₸) *</label>
+            <input class="form-control" id="entryFee" name="entryFee" type="number" min="0" max="5000" step="500" required>
+            <div class="invalid-feedback">Enter an amount from 0 to 5000 in steps of 500.</div>
+          </div>
+
+          <fieldset class="col-12">
+            <legend class="form-label">Experience level *</legend>
+            <div class="d-flex flex-wrap gap-4">
+              <div class="form-check">
+                <input class="form-check-input" id="beginner" name="experience" type="radio" value="Beginner" required>
+                <label class="form-check-label" for="beginner">Beginner</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="intermediate" name="experience" type="radio" value="Intermediate">
+                <label class="form-check-label" for="intermediate">Intermediate</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="advanced" name="experience" type="radio" value="Advanced">
+                <label class="form-check-label" for="advanced">Advanced</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="col-12">
+            <label class="form-label" for="github">GitHub profile</label>
+            <input class="form-control" id="github" name="github" type="url" placeholder="https://github.com/username">
+            <div class="invalid-feedback">Enter the full URL, including https://.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label" for="password">Password *</label>
+            <input class="form-control" id="password" name="password" type="password" minlength="8" maxlength="20" autocomplete="new-password" required>
+            <div class="invalid-feedback">Use 8–20 characters.</div>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label" for="motivation">Motivation *</label>
+            <textarea class="form-control" id="motivation" name="motivation" rows="4" minlength="50" maxlength="300" required></textarea>
+            <div class="invalid-feedback">Write between 50 and 300 characters.</div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" id="rules" name="rules" type="checkbox" value="accepted" required>
+              <label class="form-check-label" for="rules">I agree to the hackathon rules. *</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-search w-100" type="submit">Register</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
