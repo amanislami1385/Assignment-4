@@ -59,24 +59,7 @@ Assignment-4/
 ├── task3.html
 ├── style.css
 └── README.md
-```
 
-## Live Website
-
-The project is published using GitHub Pages.
-
-**Main Page:**  
-https://amanislami1385.github.io/Assignment-4/
-
-**AITU Hack 2026 Registration:**  
-https://amanislami1385.github.io/Assignment-4/task2.html
-
-**Café Table Reservation:**  
-https://amanislami1385.github.io/Assignment-4/task3.html
-
-## GitHub Repository
-
-https://github.com/amanislami1385/Assignment-4
 
 ## Learning Outcomes
 
